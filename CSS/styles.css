@@ -10,3 +10,7 @@
     height:90vh;
     width:100%;
 }
+#size, #crust, #toppings, #number{
+    background-color: transparent;
+    color:gold;
+}
