@@ -9,6 +9,7 @@
     background-repeat: no-repeat;
     height:90vh;
     width:100%;
+    color:gold;
 }
 #size, #crust, #toppings, #number{
     background-color: transparent;
