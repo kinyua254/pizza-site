@@ -21,11 +21,11 @@ $(document).ready(function () {
         var crustPrice = 0;
 
         if(pizzaNew.size == "Small"){
-            sizePrice +=200;
+            sizePrice +=400;
         }else if(pizzaNew.size == "Medium"){
-            sizePrice +=600;
+            sizePrice +=800;
         }else if (pizzaNew.size == "Large"){
-            sizePrice +=900;
+            sizePrice +=1100;
         }
         
         if(pizzaNew.topping == "BBQ-Chicken" || pizzaNew.topping == "beef" || pizzaNew.topping == "bacon"){
