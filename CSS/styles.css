@@ -10,9 +10,9 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height:98vh;
+    height:100vh;
     width:100%;
-    color:gold;
+    color:red;
 }
 #size, #crust, #toppings, #number{
     background-color: transparent;
