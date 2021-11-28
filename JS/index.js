@@ -100,6 +100,7 @@ $(document).ready(function () {
             alert("enter your location")
         }else{
             alert("your delivery will be sent to your location ," + locationn)
+            alert("YOUR ORDER!" + "(TOTAL PRICE)= " + totalPrice + ", (PIZZASIZE)=" + pizzaSize + " , (PIZZATOPPING)=" + pizzaTopping + " , (PIZZACRUST)=" + pizzaCrust + ", (ORDER NUMBER)=" + pizzas + " , (DELIVERYPRICE)=" + deliveryPrice)
         }
     });
 });
