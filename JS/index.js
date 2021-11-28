@@ -46,6 +46,6 @@ $(document).ready(function () {
         var price = (sizePrice + toppingPrice + crustPrice);
         var pizzas = parseInt(pizzaNew.number);
         var totalPrice = price * pizzas;
-        $("#output").text("(TOTAL PRICE)- " + totalPrice + ", (PIZZASIZE)-" + pizzaSize + " , (PIZZATOPPING)-" + pizzaTopping + " , (PIZZACRUST)-" + pizzaCrust + ", (ORDER NUMBER)-" + pizzas);
+        $("#output").text("(TOTAL PRICE)= " + totalPrice + ", (PIZZASIZE)=" + pizzaSize + " , (PIZZATOPPING)=" + pizzaTopping + " , (PIZZACRUST)=" + pizzaCrust + ", (ORDER NUMBER)=" + pizzas);
     });
 });
