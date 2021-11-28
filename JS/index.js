@@ -54,7 +54,7 @@ $(document).ready(function () {
         var pizzaTopping = $("select#toppings option:selected").val();
         var pizzaCrust = $("select#crust option:selected").val();
         var pizzaNumber = $("input#number").val();
-        var locationn = $("input.location").val()
+        var locationn = document.getElementById("location").value;
     
         function Pizza(size, topping, crust, number) {
             this.size = size;
@@ -91,15 +91,15 @@ $(document).ready(function () {
         } else if (pizzaNew.crust == "Glutten-free") {
             crustPrice += 70;
         }
-        if(locationn === null){
-            alert("enter your location")
-        }else{
-            alert("your delivery will be sent to your location")
-        }
     
         var price = (sizePrice + toppingPrice + crustPrice);
         var pizzas = parseInt(pizzaNew.number);
         var totalPrice = (price * pizzas) + deliveryPrice;
         $("#output").text("(TOTAL PRICE)= " + totalPrice + ", (PIZZASIZE)=" + pizzaSize + " , (PIZZATOPPING)=" + pizzaTopping + " , (PIZZACRUST)=" + pizzaCrust + ", (ORDER NUMBER)=" + pizzas + " , (DELIVERYPRICE)=" + deliveryPrice);
+        if(locationn === ""){
+            alert("enter your location")
+        }else{
+            alert("your delivery will be sent to your location ," + locationn)
+        }
     });
 });
